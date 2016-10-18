@@ -1,0 +1,43 @@
+= Vaadin demo with RestTemplate
+
+This sample project showcase how https://vaadin.com/spring[Vaadin] and
+http://projects.spring.io/spring-boot/[Spring Boot] can be used together to build
+a simple UI that uses a `RestTemplate`.
+
+We use the https://developer.github.com[Github API] to demonstrate how easy it is
+to retrieve some values using an external REST endpoints.
+
+This sample also demonstrates additional features.
+
+## Caching using Caffeine
+
+In order to prevent our app to request the github API, we use Spring's
+http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/cache.html[cache abstraction]
+to cache results. In `application.properties`, we configure Caffeine to expire an entry
+2 min after it has been created. We also record stats (see the `/metrics` endpoint).
+
+## Configuration properties
+
+Our sample exposes a `demo.vaadin.rest` namespace that exposes only one key for now:
+`demo.vaadin.rest.github.token`. The Github API has a rate limit of 60 calls per hour
+when invoked anonymously. You can create an
+https://help.github.com/articles/creating-an-access-token-for-command-line-use/[application token]
+to bypass this limitation.
+
+Once you've done that, you could set something as follows in `application.properties`:
+
+```
+demo.vaadin.rest.github.token=username:token
+```
+
+where `username` is your Github's user name and `token` the token that you've generated.
+But doing so would reveal the token within the project. Another way is to set an OS
+environment variable, something like in your shell:
+
+```
+$ export DEMO_VAADIN_REST_GITHUB_TOKEN=username:token
+```
+
+This project also uses `spring-boot-configuration-processor` that will generate
+custom meta-data at compilation time for our key. That way, you can get auto-completion
+in your favorite IDE.

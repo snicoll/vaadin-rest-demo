@@ -1,0 +1,352 @@
+[
+  {
+    "sha": "957a709",
+    "commit": {
+      "author": {
+        "name": "Henri Sara",
+        "email": "henri.sara@gmail.com",
+        "date": "2016-10-14T11:56:09Z"
+      },
+      "committer": {
+        "name": "Ilia Motornyi",
+        "email": "elmot@vaadin.com",
+        "date": "2016-10-14T11:56:09Z"
+      },
+      "message": "Make Spring Boot tests more robust",
+      "tree": {
+        "sha": "4e61f7f353e2bc49ff0bc2e2a499e21ce38b27a1",
+        "url": "https://api.github.com/repos/vaadin/spring/git/trees/4e61f7f353e2bc49ff0bc2e2a499e21ce38b27a1"
+      },
+      "url": "https://api.github.com/repos/vaadin/spring/git/commits/957a70999065835330f0ca94eeaecdf32b00c9b6",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/vaadin/spring/commits/957a70999065835330f0ca94eeaecdf32b00c9b6",
+    "html_url": "https://github.com/vaadin/spring/commit/957a70999065835330f0ca94eeaecdf32b00c9b6",
+    "comments_url": "https://api.github.com/repos/vaadin/spring/commits/957a70999065835330f0ca94eeaecdf32b00c9b6/comments",
+    "author": {
+      "login": "hesara",
+      "id": 1335918,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1335918?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hesara",
+      "html_url": "https://github.com/hesara",
+      "followers_url": "https://api.github.com/users/hesara/followers",
+      "following_url": "https://api.github.com/users/hesara/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hesara/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hesara/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hesara/subscriptions",
+      "organizations_url": "https://api.github.com/users/hesara/orgs",
+      "repos_url": "https://api.github.com/users/hesara/repos",
+      "events_url": "https://api.github.com/users/hesara/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hesara/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "elmot",
+      "id": 5366945,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5366945?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elmot",
+      "html_url": "https://github.com/elmot",
+      "followers_url": "https://api.github.com/users/elmot/followers",
+      "following_url": "https://api.github.com/users/elmot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elmot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elmot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elmot/subscriptions",
+      "organizations_url": "https://api.github.com/users/elmot/orgs",
+      "repos_url": "https://api.github.com/users/elmot/repos",
+      "events_url": "https://api.github.com/users/elmot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elmot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "120559d37710391994210d04eaece0cea975fed5",
+        "url": "https://api.github.com/repos/vaadin/spring/commits/120559d37710391994210d04eaece0cea975fed5",
+        "html_url": "https://github.com/vaadin/spring/commit/120559d37710391994210d04eaece0cea975fed5"
+      }
+    ]
+  },
+  {
+    "sha": "120559d37710391994210d04eaece0cea975fed5",
+    "commit": {
+      "author": {
+        "name": "Henri Sara",
+        "email": "henri.sara@gmail.com",
+        "date": "2016-10-14T10:11:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2016-10-14T10:11:43Z"
+      },
+      "message": "Automated test for listing views for a UI (#112)\n\nCloses #109",
+      "tree": {
+        "sha": "7f9c3dacdb141f15f6ced91c36182ae001e311eb",
+        "url": "https://api.github.com/repos/vaadin/spring/git/trees/7f9c3dacdb141f15f6ced91c36182ae001e311eb"
+      },
+      "url": "https://api.github.com/repos/vaadin/spring/git/commits/120559d37710391994210d04eaece0cea975fed5",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/vaadin/spring/commits/120559d37710391994210d04eaece0cea975fed5",
+    "html_url": "https://github.com/vaadin/spring/commit/120559d37710391994210d04eaece0cea975fed5",
+    "comments_url": "https://api.github.com/repos/vaadin/spring/commits/120559d37710391994210d04eaece0cea975fed5/comments",
+    "author": {
+      "login": "hesara",
+      "id": 1335918,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1335918?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hesara",
+      "html_url": "https://github.com/hesara",
+      "followers_url": "https://api.github.com/users/hesara/followers",
+      "following_url": "https://api.github.com/users/hesara/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hesara/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hesara/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hesara/subscriptions",
+      "organizations_url": "https://api.github.com/users/hesara/orgs",
+      "repos_url": "https://api.github.com/users/hesara/repos",
+      "events_url": "https://api.github.com/users/hesara/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hesara/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "64e070054688012c09f7a0a1a23de730f72f2c34",
+        "url": "https://api.github.com/repos/vaadin/spring/commits/64e070054688012c09f7a0a1a23de730f72f2c34",
+        "html_url": "https://github.com/vaadin/spring/commit/64e070054688012c09f7a0a1a23de730f72f2c34"
+      }
+    ]
+  },
+  {
+    "sha": "64e070054688012c09f7a0a1a23de730f72f2c34",
+    "commit": {
+      "author": {
+        "name": "Henri Sara",
+        "email": "henri.sara@gmail.com",
+        "date": "2016-10-14T10:06:54Z"
+      },
+      "committer": {
+        "name": "Ilia Motornyi",
+        "email": "elmot@vaadin.com",
+        "date": "2016-10-14T10:06:54Z"
+      },
+      "message": "Support @ViewContainer annotation on fields\n\nBoth Spring managed and unmanaged fields in the UI and other Spring managed beans are supported.\n\nCloses #97",
+      "tree": {
+        "sha": "affd25d0c0dbe5d130698042e363d2c659fe0725",
+        "url": "https://api.github.com/repos/vaadin/spring/git/trees/affd25d0c0dbe5d130698042e363d2c659fe0725"
+      },
+      "url": "https://api.github.com/repos/vaadin/spring/git/commits/64e070054688012c09f7a0a1a23de730f72f2c34",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/vaadin/spring/commits/64e070054688012c09f7a0a1a23de730f72f2c34",
+    "html_url": "https://github.com/vaadin/spring/commit/64e070054688012c09f7a0a1a23de730f72f2c34",
+    "comments_url": "https://api.github.com/repos/vaadin/spring/commits/64e070054688012c09f7a0a1a23de730f72f2c34/comments",
+    "author": {
+      "login": "hesara",
+      "id": 1335918,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1335918?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hesara",
+      "html_url": "https://github.com/hesara",
+      "followers_url": "https://api.github.com/users/hesara/followers",
+      "following_url": "https://api.github.com/users/hesara/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hesara/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hesara/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hesara/subscriptions",
+      "organizations_url": "https://api.github.com/users/hesara/orgs",
+      "repos_url": "https://api.github.com/users/hesara/repos",
+      "events_url": "https://api.github.com/users/hesara/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hesara/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "elmot",
+      "id": 5366945,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5366945?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elmot",
+      "html_url": "https://github.com/elmot",
+      "followers_url": "https://api.github.com/users/elmot/followers",
+      "following_url": "https://api.github.com/users/elmot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elmot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elmot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elmot/subscriptions",
+      "organizations_url": "https://api.github.com/users/elmot/orgs",
+      "repos_url": "https://api.github.com/users/elmot/repos",
+      "events_url": "https://api.github.com/users/elmot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elmot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c9418b3ed4c98adbe0612f661be7f55790232ccc",
+        "url": "https://api.github.com/repos/vaadin/spring/commits/c9418b3ed4c98adbe0612f661be7f55790232ccc",
+        "html_url": "https://github.com/vaadin/spring/commit/c9418b3ed4c98adbe0612f661be7f55790232ccc"
+      }
+    ]
+  },
+  {
+    "sha": "c9418b3ed4c98adbe0612f661be7f55790232ccc",
+    "commit": {
+      "author": {
+        "name": "Henri Sara",
+        "email": "henri.sara@gmail.com",
+        "date": "2016-10-14T08:35:05Z"
+      },
+      "committer": {
+        "name": "Ilia Motornyi",
+        "email": "elmot@vaadin.com",
+        "date": "2016-10-14T08:35:05Z"
+      },
+      "message": "Make SpringViewProvider UI scoped (#108)\n\nThis is logically more correct and allows more granular serialization.\r\n\r\nCloses #37",
+      "tree": {
+        "sha": "91040e1d979dee64a4f3d406e5c0cc0cfca65e51",
+        "url": "https://api.github.com/repos/vaadin/spring/git/trees/91040e1d979dee64a4f3d406e5c0cc0cfca65e51"
+      },
+      "url": "https://api.github.com/repos/vaadin/spring/git/commits/c9418b3ed4c98adbe0612f661be7f55790232ccc",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/vaadin/spring/commits/c9418b3ed4c98adbe0612f661be7f55790232ccc",
+    "html_url": "https://github.com/vaadin/spring/commit/c9418b3ed4c98adbe0612f661be7f55790232ccc",
+    "comments_url": "https://api.github.com/repos/vaadin/spring/commits/c9418b3ed4c98adbe0612f661be7f55790232ccc/comments",
+    "author": {
+      "login": "hesara",
+      "id": 1335918,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1335918?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hesara",
+      "html_url": "https://github.com/hesara",
+      "followers_url": "https://api.github.com/users/hesara/followers",
+      "following_url": "https://api.github.com/users/hesara/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hesara/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hesara/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hesara/subscriptions",
+      "organizations_url": "https://api.github.com/users/hesara/orgs",
+      "repos_url": "https://api.github.com/users/hesara/repos",
+      "events_url": "https://api.github.com/users/hesara/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hesara/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "elmot",
+      "id": 5366945,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5366945?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elmot",
+      "html_url": "https://github.com/elmot",
+      "followers_url": "https://api.github.com/users/elmot/followers",
+      "following_url": "https://api.github.com/users/elmot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elmot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elmot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elmot/subscriptions",
+      "organizations_url": "https://api.github.com/users/elmot/orgs",
+      "repos_url": "https://api.github.com/users/elmot/repos",
+      "events_url": "https://api.github.com/users/elmot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elmot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b8c7dcda969028e22422af7e0541685634ee3e7d",
+        "url": "https://api.github.com/repos/vaadin/spring/commits/b8c7dcda969028e22422af7e0541685634ee3e7d",
+        "html_url": "https://github.com/vaadin/spring/commit/b8c7dcda969028e22422af7e0541685634ee3e7d"
+      }
+    ]
+  },
+  {
+    "sha": "b8c7dcda969028e22422af7e0541685634ee3e7d",
+    "commit": {
+      "author": {
+        "name": "Henri Sara",
+        "email": "henri.sara@gmail.com",
+        "date": "2016-10-13T10:40:35Z"
+      },
+      "committer": {
+        "name": "Ilia Motornyi",
+        "email": "elmot@vaadin.com",
+        "date": "2016-10-13T10:40:35Z"
+      },
+      "message": "Support getting available view names for current UI\n\nCloses #65",
+      "tree": {
+        "sha": "c2f8999915a33ce012abfa6edf89043de763aae6",
+        "url": "https://api.github.com/repos/vaadin/spring/git/trees/c2f8999915a33ce012abfa6edf89043de763aae6"
+      },
+      "url": "https://api.github.com/repos/vaadin/spring/git/commits/b8c7dcda969028e22422af7e0541685634ee3e7d",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/vaadin/spring/commits/b8c7dcda969028e22422af7e0541685634ee3e7d",
+    "html_url": "https://github.com/vaadin/spring/commit/b8c7dcda969028e22422af7e0541685634ee3e7d",
+    "comments_url": "https://api.github.com/repos/vaadin/spring/commits/b8c7dcda969028e22422af7e0541685634ee3e7d/comments",
+    "author": {
+      "login": "hesara",
+      "id": 1335918,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1335918?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hesara",
+      "html_url": "https://github.com/hesara",
+      "followers_url": "https://api.github.com/users/hesara/followers",
+      "following_url": "https://api.github.com/users/hesara/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hesara/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hesara/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hesara/subscriptions",
+      "organizations_url": "https://api.github.com/users/hesara/orgs",
+      "repos_url": "https://api.github.com/users/hesara/repos",
+      "events_url": "https://api.github.com/users/hesara/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hesara/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "elmot",
+      "id": 5366945,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5366945?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elmot",
+      "html_url": "https://github.com/elmot",
+      "followers_url": "https://api.github.com/users/elmot/followers",
+      "following_url": "https://api.github.com/users/elmot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elmot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elmot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elmot/subscriptions",
+      "organizations_url": "https://api.github.com/users/elmot/orgs",
+      "repos_url": "https://api.github.com/users/elmot/repos",
+      "events_url": "https://api.github.com/users/elmot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elmot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e1b5169da325fade7bdbdcca73d9bbaad966c6e7",
+        "url": "https://api.github.com/repos/vaadin/spring/commits/e1b5169da325fade7bdbdcca73d9bbaad966c6e7",
+        "html_url": "https://github.com/vaadin/spring/commit/e1b5169da325fade7bdbdcca73d9bbaad966c6e7"
+      }
+    ]
+  }
+]
