@@ -1,9 +1,7 @@
 package demo.github;
 
-import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,16 +9,11 @@ import demo.VaadinRestDemoProperties;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpRequest;
 import org.springframework.http.MediaType;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.client.ClientHttpRequestExecution;
-import org.springframework.http.client.ClientHttpRequestInterceptor;
-import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Service;
-import org.springframework.util.Base64Utils;
+import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestTemplate;
 
@@ -31,8 +24,8 @@ public class GithubClient {
 
 	public GithubClient(RestTemplateBuilder restTemplateBuilder,
 			VaadinRestDemoProperties properties) {
-		this.restTemplate = restTemplateBuilder.additionalInterceptors(
-				new GithubAppTokenInterceptor(properties.getGithub().getToken())).build();
+		this.restTemplate = setupRestTemplate(restTemplateBuilder,
+				properties.getGithub().getToken());
 	}
 
 	@Cacheable("github.commits")
@@ -53,25 +46,13 @@ public class GithubClient {
 		}
 	}
 
-	private static class GithubAppTokenInterceptor implements ClientHttpRequestInterceptor {
-
-		private final String token;
-
-		GithubAppTokenInterceptor(String token) {
-			this.token = token;
+	private RestTemplate setupRestTemplate(RestTemplateBuilder builder, String token) {
+		if (StringUtils.hasText(token)) {
+			String[] content = token.split(":");
+			Assert.state(content.length == 2, "Invalid Github token");
+			builder = builder.basicAuthorization(content[0], content[1]);
 		}
-
-		@Override
-		public ClientHttpResponse intercept(HttpRequest httpRequest, byte[] bytes,
-				ClientHttpRequestExecution clientHttpRequestExecution) throws IOException {
-			if (StringUtils.hasText(this.token)) {
-				byte[] basicAuthValue = this.token.getBytes(StandardCharsets.UTF_8);
-				httpRequest.getHeaders().set(HttpHeaders.AUTHORIZATION,
-						"Basic " + Base64Utils.encodeToString(basicAuthValue));
-			}
-			return clientHttpRequestExecution.execute(httpRequest, bytes);
-		}
-
+		return builder.build();
 	}
 
 }
