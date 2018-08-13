@@ -33,8 +33,8 @@ public class MainUI extends VerticalLayout {
 	public MainUI(GithubClient c) {
 		this.githubClient = c;
 
-		commits.addComponentColumn(this::createLink).setFlexGrow(1).setHeader("Message");
-		commits.addColumn(commit -> commit.getCommitter().getName()).setFlexGrow(0).setHeader("Committer");
+		commits.addComponentColumn(this::createLink).setFlexGrow(3).setHeader("Message");
+		commits.addColumn(commit -> commit.getCommitter().getName()).setFlexGrow(1).setHeader("Committer");
 		commits.setWidth("100%");
 
 		refresh.setIcon(VaadinIcon.REFRESH.create());
